@@ -8,17 +8,17 @@ function Footer() {
 
   return (
     <>
-    <div ref={container} className="page7 pixel   h-[100vh] px-20   py-10   w-full text-white bg-[#111318] relative  flex items-center justify-center">
+    <div ref={container} className="page7 pixel   h-[100vh] md:px-20   py-10   w-full text-white bg-[#111318] relative  flex items-center justify-center">
          <div className="bg-zinc-900 h-full w-full flex  flex-col  p-10 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] ">
-          <div className="flex flex-row-reverse items-center justify-between">
-          <div className="text-lg sans2 flex   flex-col  ">
+          <div className=" flex-row-reverse items-center md:flex  md:justify-between">
+          <div className="text-lg sans2 flex flex-col   ">
             <h1 className="text-2xl pixel">Portfolio</h1> 
             <h1>Skills</h1>
              <h1>Projects</h1>
              <h1>Exprecience</h1> 
           </div>
 
-            <div className="text-lg sans2 flex  flex-col  ">
+            <div className="text-lg sans2 flex  flex-col mt-10  ">
             <h1 className="text-2xl pixel">Contact</h1>
            <a href="https://www.linkedin.com/in/muchkund-thote">
              <h1> <i class="ri-linkedin-box-fill"></i> muchkund-thote </h1>
@@ -33,9 +33,9 @@ function Footer() {
           </div>
 
           </div>
-  <div className="flex items-center justify-center flex-col">
-         <h1 className="text-center text-[19rem]">Muchku.</h1>
-         <p className="text-lg -mt-5">
+  <div className="flex items-center justify-end flex-col mt-30 ">
+         <h1 className="text-center text-8xl md:text-[19rem]">Muchku.</h1>
+         <p className="text-lg md:-mt-5 mt-1">
           Made with ❤️ caffeine, and a lot of late-night debugging.© 2025 Muchkundraje Thote. All rights reserved. <br />
           {/* If you’ve scrolled this far, we’re basically friends now. Say hi 👉 [your.email@example.com] 👈 */}
           </p>

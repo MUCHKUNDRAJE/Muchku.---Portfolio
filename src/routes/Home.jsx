@@ -6,13 +6,12 @@ import Nav from '../components/resuable/nav';
 import { Button } from '../components/ui/button';
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import Page3 from '../pages/Home/Page3';
 import Page4 from '../pages/Home/Page4';
 import Page5 from '../pages/Home/Page5';
-import Page6 from '../pages/Home/Page6';
+import Page6 from '../pages/Home/page6';
 import Footer from '../pages/Home/footer';
-gsap.registerPlugin(MorphSVGPlugin);
+
 
 
 function Home() {

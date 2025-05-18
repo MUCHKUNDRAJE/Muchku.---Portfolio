@@ -70,21 +70,22 @@ gsap.fromTo(
 
 
   return (
-    <div ref={container} className="page1 h-full w-full p-20 flex  z-100 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
-      <div className="w-[30rem] h-full bg-red-300 relative overflow-hidden   ">
-
+    <div ref={container} className="page1 h-full w-full p-2 md:p-20 flex overflow-hidden z-100 md:bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+      
+      
+      <div className=" md:w-[30rem] h-full bg-red-300   md:block md:relative absolute top-0 -left-  overflow-hidden  ">
         <div className="slider h-full w-full bg-[#111318] absolute top-0 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] "></div>
-          <div className="slider2 h-full w-full bg-[#111318] absolute top-0 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] "></div>
+        <div className="slider2 h-full w-full bg-[#111318] absolute top-0 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] "></div>
         <img
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover  "
           src="/image/photo for Website.jpg"
           alt=""
         />
          {/* <div className="slider h-full w-full bg-[#111318] absolute top-0 "></div> */}
       </div>
-      <div className="pixel w-[70rem] h-full text-white px-20 py-30 z-10">
-        <h1 className="text-5xl">Hello</h1>
-        <h2 className="text-7xl">I am 
+      <div className="pixel w-[70rem] h-full  md:text-white  py-80 px-2 md:px-20 md:py-30 z-10">
+        <h1 className=" text-4xl md:text-5xl">Hello</h1>
+        <h2 className="sans md:hidden text-5xl md:text-7xl">I am 
           { " Muchkundraje  Thote".split("").map((val , index)=>(
             <span key={index} className="name-letter opacity-0 ">
       {val}
@@ -94,7 +95,17 @@ gsap.fromTo(
           }
               
         </h2>
-        <p className="text-3xl">
+            <h2 className="md:block hidden pixel text-3xl md:text-7xl">I am 
+          { " Muchkundraje  Thote".split("").map((val , index)=>(
+            <span key={index} className="name-letter opacity-0 ">
+      {val}
+     </span>
+          ))
+
+          }
+              
+        </h2>
+        <p className=" md:block hidden   text-xl md:text-3xl">
           {"I am a passionate and  driven individual with a keen interest in exploring creative and technical challenges. With a mindset rooted in innovation and continuous learning, I enjoy working on projects that push boundaries and bring fresh perspectives to problem-solving. I believe that curiosity, resilience, and adaptability are key traits that shape not only great professionals but also impactful individuals in today’s ever-evolving world."
             .split("")
             .map((val, index) => (
@@ -103,6 +114,9 @@ gsap.fromTo(
               </span>
             ))}
         </p>
+
+  
+
       </div>
     </div>
   );

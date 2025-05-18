@@ -16,8 +16,8 @@ function Page2() {
   ); // scope for safety
 
   return (
-    <div ref={container} className="page2 pixel text-[20vw] px-20 min-h-full  py-10 w-full text-white bg-[#111318] ">
-      My Journey
+    <div ref={container} className="page2 pixel text-[20vw] p-1 md:px-20 min-h-full  py-10 w-full text-white bg-[#111318] ">
+      <h1 className="text-center md:text-start" >My Journey</h1>
         
         <div className="flex flex-col gap-10">        
           {
