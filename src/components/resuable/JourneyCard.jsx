@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import Journeydata from '../../../database/Journeydata';
+import Journeydata from '../../database/Journeydata';
 
 
 function JourneyCard({direction ,index}) {

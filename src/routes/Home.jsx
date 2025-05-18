@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import Loader from '../components/resuable/Loader';
-import Page1 from '../components/resuable/Home/page1';
-import Page2 from '../components/resuable/Home/Page2';
+import Page1 from '../pages/Home/page1';
+import Page2 from '../pages/Home/Page2';
 import Nav from '../components/resuable/nav';
 import { Button } from '../components/ui/button';
 import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
-import Page3 from '../components/resuable/Home/Page3';
-import Page4 from '../components/resuable/Home/Page4';
-import Page5 from '../components/resuable/Home/Page5';
-import Page6 from '../components/resuable/Home/page6';
-import Footer from '../components/resuable/Home/footer';
+import Page3 from '../pages/Home/Page3';
+import Page4 from '../pages/Home/Page4';
+import Page5 from '../pages/Home/Page5';
+import Page6 from '../pages/Home/page6';
+import Footer from '../pages/Home/footer';
 gsap.registerPlugin(MorphSVGPlugin);
 
 
@@ -57,7 +57,7 @@ function Home() {
 
   return (
     <>
-      {/* <Loader /> */}
+      <Loader />
       <Nav />
       <div className="h-screen w-full bg-[#111318] relative ">
         <Page1 />

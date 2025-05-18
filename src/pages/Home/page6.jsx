@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 // import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
-import Card from "./Card";
-import JourneyCard from "./JourneyCard";
-import Journeydata from "../../../database/Journeydata";
-import { Button } from "../../ui/button";
+import Card from "../../components/resuable/Card";
+import JourneyCard from "../../components/resuable/JourneyCard";
+import Journeydata from "../../database/Journeydata";
+import { Button } from "../../components/ui/button";
 import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger"; 

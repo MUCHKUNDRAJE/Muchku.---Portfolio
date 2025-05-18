@@ -1,9 +1,6 @@
 import React, { useRef } from "react";
 // import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Card from "./Card";
-import JourneyCard from "./JourneyCard";
-import Journeydata from "../../../database/Journeydata";
 import CircleImageSimulation from "./SkillCollision";
 
 function Page3() {

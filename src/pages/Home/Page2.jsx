@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 // import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Card from "./Card";
-import JourneyCard from "./JourneyCard";
-import Journeydata from "../../../database/Journeydata";
+import Card from "../../components/resuable/Card";
+import JourneyCard from "../../components/resuable/JourneyCard";
+import Journeydata from "../../database/Journeydata";
 
 function Page2() {
   const container = useRef(); // for scoping GSAP animations
