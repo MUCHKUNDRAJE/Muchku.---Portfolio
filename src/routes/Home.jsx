@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Loader from '../components/resuable/Loader';
-import Page1 from '../pages/Home/page1';
+import Page1 from '../pages/Home/Page1';
 import Page2 from '../pages/Home/Page2';
 import Nav from '../components/resuable/nav';
 import { Button } from '../components/ui/button';
@@ -10,7 +10,7 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import Page3 from '../pages/Home/Page3';
 import Page4 from '../pages/Home/Page4';
 import Page5 from '../pages/Home/Page5';
-import Page6 from '../pages/Home/page6';
+import Page6 from '../pages/Home/Page6';
 import Footer from '../pages/Home/footer';
 gsap.registerPlugin(MorphSVGPlugin);
 
