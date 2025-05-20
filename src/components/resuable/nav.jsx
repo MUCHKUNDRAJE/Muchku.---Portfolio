@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
@@ -6,9 +7,13 @@ function Nav() {
            <div>Muchku.</div>
 
            <div className='flex items-center justify-center gap-10'>
-            <h1>Home</h1>
+           <Link to="/">
+           <h1>Home</h1>
+           </Link> 
             <h1>Contact</h1>
-            <h1>Project</h1>
+               <Link to="/projects">
+           <h1>Projects</h1>
+           </Link> 
             <a href="https://github.com/MUCHKUNDRAJE">
              <i class="ri-github-fill text-2xl"></i> 
            </a>

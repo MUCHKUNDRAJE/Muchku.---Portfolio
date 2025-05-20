@@ -33,9 +33,9 @@ function Footer() {
           </div>
 
           </div>
-  <div className="flex items-center justify-end flex-col mt-30 ">
+  <div className="flex items-center justify-end flex-col mt-28 ">
          <h1 className="text-center text-8xl md:text-[19rem]">Muchku.</h1>
-         <p className="text-lg md:-mt-5 mt-1">
+         <p className="text-lg md:-mt-6 mt-1">
           Made with ❤️ caffeine, and a lot of late-night debugging.© 2025 Muchkundraje Thote. All rights reserved. <br />
           {/* If you’ve scrolled this far, we’re basically friends now. Say hi 👉 [your.email@example.com] 👈 */}
           </p>

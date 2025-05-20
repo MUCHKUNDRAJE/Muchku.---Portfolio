@@ -34,7 +34,7 @@ function Page5() {
 
       <div className=" px-6 md:px-0  sans2 mt-10 w-96 md:w-[40rem] text-white md:right-20 absolute flex items-start justify-start flex-col  ">
         <h2 className=" pixel text-4xl md:whitespace-nowrap">
-          Web Developer – Enginneering India Club YCCE
+          Enginneering India Club YCCE Website 
         </h2>
 
         <p className=" text-sm md:text-lg  ">
