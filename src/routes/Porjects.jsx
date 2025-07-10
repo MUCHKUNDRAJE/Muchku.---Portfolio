@@ -5,6 +5,8 @@ import Lenis from '@studio-freight/lenis';
 function Porjects() {
 
      useEffect(() => {
+          window.scrollTo(0, 0);
+
         // Lenis smooth scroll
         const lenis = new Lenis({
           duration: 1.2,
@@ -24,6 +26,7 @@ function Porjects() {
       }, []);
   return (
     <div>
+         
           <Page1/>
 
 

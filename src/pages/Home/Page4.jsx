@@ -2,8 +2,9 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 // import { useGSAP } from "@gsap/react";
 import { Button } from "../../components/ui/button";
+import { Link } from "react-router-dom";
 
-function Page4() {
+function Page4( {onTriggerLoader , isTrue }) {
   const container = useRef(); // for scoping GSAP animations
   const cursorref = useRef();
 
@@ -36,15 +37,23 @@ function Page4() {
       ease: "power3.out",
     });
   };
+    const handleClick = () => {
+    if (isTrue && onTriggerLoader) {
+      onTriggerLoader(); // triggers Exloader animation and navigation
+    }
+  };
+
 
   return (
+   
     <div
       ref={container}
-      className="page2 pixel text-[10vw] px-20 h-screen  py-10 w-full text-white bg-[#111318] relative "
+       onClick={handleClick}
+      className="page2 pixel text-[10vw] md:px-20 h-screen overflow-hidden  py-10 w-full text-white bg-[#111318] relative "
     >
       <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
         <h1 className="  whitespace-nowrap    text-white">See My Porjects</h1>
-        <Button className="absolute top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black text-xl ">
+        <Button className="absolute top-20 md:top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black text-xl ">
           Porject Gallery
         </Button>
       </div>
@@ -52,9 +61,19 @@ function Page4() {
         ref={cursorref}
         className=" h-15 w-15  rounded-full bg-white absolute top-0 left-0 opacity-0 "
       >
-     <i class="ri-arrow-right-up-line text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black"></i>
+     <i class="ri-arrow-right-up-line text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black opacity-100"></i>
       </div>
-      <div className="h-full w-full bg-blue-400 overflow-hidden opacity-35 relative">
+
+      <div className=" md:hidden block w-full h-full opacity-50 bg-center">
+ 
+            <img
+            className="h-full w-full  object-cover"
+              src="https://i.pinimg.com/736x/f1/a5/64/f1a5640fe39cb3e00ec09929ad9a8ac5.jpg"
+              alt=""
+            />
+        
+      </div>
+      <div className=" hidden md:block h-full w-full bg-blue-400 overflow-hidden opacity-35 relative">
         <div
           onMouseMove={(e) => moveCursor(e)}
           onMouseEnter={showCursor}
@@ -132,6 +151,7 @@ function Page4() {
         </div>
       </div>
     </div>
+    
   );
 }
 

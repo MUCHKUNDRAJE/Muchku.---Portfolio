@@ -73,7 +73,7 @@ gsap.fromTo(
     <div ref={container} className="page1 h-full w-full p-2 md:p-20 flex overflow-hidden z-100 md:bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
       
       
-      <div className=" md:w-[30rem] h-full bg-red-300   md:block md:relative absolute top-0 -left-  overflow-hidden  ">
+      <div className=" md:w-[30rem] h-full bg-red-300 w-full md:block md:relative absolute top-0 left-0  overflow-hidden  ">
         <div className="slider h-full w-full bg-[#111318] absolute top-0 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] "></div>
         <div className="slider2 h-full w-full bg-[#111318] absolute top-0 bg-[url(https://images.unsplash.com/photo-1710036199704-abda5b5471bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] "></div>
         <img
@@ -83,9 +83,9 @@ gsap.fromTo(
         />
          {/* <div className="slider h-full w-full bg-[#111318] absolute top-0 "></div> */}
       </div>
-      <div className="pixel w-[70rem] h-full  md:text-white  py-80 px-2 md:px-20 md:py-30 z-10">
+      <div className="pixel w-[70rem] h-full text-black md:text-white  py-80 -ml-1 md:px-20 md:py-30 z-10">
         <h1 className=" text-4xl md:text-5xl">Hello</h1>
-        <h2 className="sans md:hidden text-5xl md:text-7xl">I am 
+        <h2 className="sans md:hidden text-5xl  md:text-7xl">I am 
           { " Muchkundraje  Thote".split("").map((val , index)=>(
             <span key={index} className="name-letter opacity-0 ">
       {val}

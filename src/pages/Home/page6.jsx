@@ -14,7 +14,7 @@ function Page6() {
   return (
     <div
       ref={container}
-      className="page6 pixel text-[4vw] px-20  min-h-screen  py-20 w-full text-white bg-[#111318] relative "
+      className="md:block hidden page6 pixel text-[4vw] px-20 overflow-hidden  min-h-screen  py-20 w-full text-white bg-[#111318] relative "
 >
    <h1>Extracurricular</h1>
   <div className="h-[35rem] w-full flex items-end justify-between ">

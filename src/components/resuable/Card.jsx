@@ -48,7 +48,7 @@ const hideCursor = () =>{
       <i ref={iconRef} class="ri-arrow-right-up-line text-2xl text-black  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></i>
     </div>
        
-    {vedio ? <video  className='h-full w-full object-cover ' autoPlay muted loop src={imag}></video> :  <img   className='h-full w-full object-cover object-bottom' loading='lazy'  src={imag} alt="" />  
+    {vedio ? <video  className='h-full w-full object-cover ' autoPlay muted loop src={imag}></video> :  <img   className='h-full w-full object-cover object-center' loading='lazy'  src={imag} alt="" />  
 }
      
     </div>

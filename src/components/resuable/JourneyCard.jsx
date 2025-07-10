@@ -7,20 +7,20 @@ function JourneyCard({direction ,index}) {
   return (
     <>
       {direction === 1 ? (
-        <div className="flex flex-col md:flex-row">
+        <div key={index} className=" scale-95 md:scale-100 flex flex-col md:flex-row ">
         <Card imag={ Journeydata[index].imag} vedio={Journeydata[index].vedio} />
-          <div className="pixel text-3xl md:w-[55rem] flex items-start justify-center flex-col p-10">
-             <h1 className='flex gap-2 items-center justify-center'>{Journeydata[index].title}</h1>
-            <p className=" text-lg md:text-2xl">
+          <div className="pixel text-3xl md:w-[55rem] flex items-center md:items-start justify-center flex-col px-2 py-10 md:p-10">
+             <h1 className='text-center md:text-start md:text-4xl'>{Journeydata[index].title}</h1>
+            <p className=" text-lg md:text-2xl text-center md:text-start ">
                 {Journeydata[index].para}
             </p>
           </div>
         </div>
       ) : (
-        <div className="flex flex-col md:flex-row">
-          <div className="pixel text-3xl w-80 md:w-[55rem] flex items-start justify-center flex-col p-10">
-           <h1 className='flex gap-2 items-center justify-center'>{Journeydata[index].title}</h1>
-            <p className="text-2xl">
+        <div  key={index}  className=" scale-95 md:scale-100  flex flex-col-reverse md:flex-row">
+          <div className="pixel text-3xl md:w-[55rem] flex items-center md:items-start justify-center flex-col px-2 py-10 md:p-10">
+           <h1 className=' md:text-4xl text-center md:text-start'>{Journeydata[index].title}</h1>
+            <p className="  text-lg md:text-2xl text-center md:text-start ">
                 {Journeydata[index].para}
             </p>
           </div>

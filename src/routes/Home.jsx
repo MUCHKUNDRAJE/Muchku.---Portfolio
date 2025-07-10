@@ -11,11 +11,14 @@ import Page4 from '../pages/Home/Page4';
 import Page5 from '../pages/Home/Page5';
 import Page6 from '../pages/Home/page6';
 import Footer from '../pages/Home/footer';
+import Exloader from '../components/resuable/exchnage-loader';
 
 
 
 function Home() {
   const blobRef = useRef();
+   const exloaderTriggerRef = useRef(null);
+    const page3Ref = useRef(null);
 
   useEffect(() => {
     // Lenis smooth scroll
@@ -57,16 +60,18 @@ function Home() {
   return (
     <>
       <Loader />
-      <Nav />
+      <Nav onTriggerLoader={() => exloaderTriggerRef.current?.()} />
       <div className="h-screen w-full bg-[#111318] relative ">
+        <Exloader triggerRef={exloaderTriggerRef}/>
         <Page1 />
         <Page2 />
-        <Page3/>
+        <Page3  ref={page3Ref} />
         <Page5/>
-        <Page4/>
+        <Page4 onTriggerLoader={() => exloaderTriggerRef.current?.()} isTrue ={true} />
         <Page6/>
-        <Footer/>
+          <Footer onScrollToSkills={() => page3Ref.current?.scrollIntoView({ behavior: 'smooth' })} />
       </div>
+
     </>
   );
 }

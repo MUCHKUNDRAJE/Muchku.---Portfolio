@@ -14,7 +14,7 @@ function Page5() {
   return (
     <div
       ref={container}
-      className="page5 pixel text-[4vw] md:px-20 h-[120vh] md:h-screen  py-10 w-full text-white bg-[#111318] relative "
+      className="page5 pixel text-[4vw] md:px-20 h-[120vh] md:h-screen overflow-hidden  py-10 w-full text-white bg-[#111318] relative "
     >
       <h1 className="text-6xl text-center md:text-start md:text-8xl mb-7"> Experience</h1>
 

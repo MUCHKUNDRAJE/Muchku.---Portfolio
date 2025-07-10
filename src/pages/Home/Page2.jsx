@@ -16,8 +16,8 @@ function Page2() {
   ); // scope for safety
 
   return (
-    <div ref={container} className="page2 pixel text-[20vw] p-1 md:px-20 min-h-full  py-10 w-full text-white bg-[#111318] ">
-      <h1 className="text-center md:text-start" >My Journey</h1>
+    <div ref={container} className="page2 pixel flex items-center justify-center overflow-hidden text-[20vw]  flex-col md:px-20 min-h-full  py-10 w-full text-white bg-[#111318] ">
+      <h1 className="text-center md:text-start whitespace-nowrap" >My Journey</h1>
         
         <div className="flex flex-col gap-10">        
           {
