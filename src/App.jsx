@@ -16,7 +16,7 @@ function App() {
   return (
     <>
     <Analytics/>
-    <SpeedInsights/>
+
      <Routes>
   
        
