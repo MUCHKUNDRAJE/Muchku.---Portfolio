@@ -52,9 +52,9 @@ function Page4( {onTriggerLoader , isTrue }) {
       className="page2 pixel text-[10vw] md:px-20 h-screen overflow-hidden  py-10 w-full text-white bg-[#111318] relative "
     >
       <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  ">
-        <h1 className="  whitespace-nowrap    text-white">See My Porjects</h1>
+        <h1 className="  whitespace-nowrap    text-white">See My Projects</h1>
         <Button className="absolute top-20 md:top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white text-black text-xl ">
-          Porject Gallery
+          Project Gallery
         </Button>
       </div>
       <div

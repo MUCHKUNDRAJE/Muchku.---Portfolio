@@ -9,12 +9,14 @@ import Pokemon from "./routes/projects/Pokemon";
 import UIgallery from "./routes/projects/UIgallery";
 import { Analytics } from "@vercel/analytics/react"
 import { ImageOff } from "lucide-react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 function App() {
   return (
     <>
     <Analytics/>
+    <SpeedInsights/>
      <Routes>
   
        
