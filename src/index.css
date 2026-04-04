@@ -194,3 +194,31 @@
 .clip {
   clip-path: path("M0,0 H180 V30 A20,20 0 0 1 220,30 H400 V0 H512 V384 H0 Z");
 }
+
+
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.im-fell-english-regular-italic {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gfs-didot-regular {
+  font-family: "GFS Didot", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.league-gothic {
+  font-family: "League Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}

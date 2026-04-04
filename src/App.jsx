@@ -10,6 +10,7 @@ import UIgallery from "./routes/projects/UIgallery";
 import { Analytics } from "@vercel/analytics/react"
 import { ImageOff } from "lucide-react";
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Achievement from "./routes/Achievement";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/project/Note.js" element={<NoteJs/>}/>
         <Route path="/project/pokemon" element={<Pokemon/>}/>
         <Route path="/project/Uigallery" element={<UIgallery/>}/>
+          <Route path="/achievement" element={<Achievement/>}/>
 
 
 

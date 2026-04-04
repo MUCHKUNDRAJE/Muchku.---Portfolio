@@ -1,14 +1,18 @@
   import React ,{useState} from 'react'
   import { Link } from 'react-router-dom'
-
+  import { useLocation } from 'react-router-dom';
   function Nav({ onTriggerLoader , isTrue }) {
     const [slide, setslide] = useState(false);
+    const locator = useLocation();
+
+
+    
     
     return ( 
 
-      
+       
         
-        <div className=' pixel h-10 bg- fixed w-full flex items-center justify-between text-white px-10 md:px-20 py-2 text-lg z-100 mt-3 '>
+        <div className={`pixel h-10 bg- fixed w-full flex items-center justify-between ${locator.pathname == "/achievement" ? "text-black" :" text-white"} px-10 md:px-20 py-2 text-lg z-100 mt-3 `}>
             <div>Muchku.</div>
             <div className=' hidden md:flex items-center justify-center gap-10'>
             <Link to="/">
@@ -16,6 +20,9 @@
             </Link> 
             <Link to={"/Contact"} >
               <h1>Contact</h1>
+            </Link>
+               <Link to={"/achievement"} className=' cursor-pointer  w-full p-2 flex items-center justify-center'>
+              <h1>Achievement</h1>
             </Link>
                 <Link to={ isTrue && '/projects' } onClick={onTriggerLoader}>
             <h1>Projects</h1>
@@ -40,6 +47,10 @@
             <hr />
             <Link to={"/Contact"} className=' cursor-pointer  w-full p-2 flex items-center justify-center'>
               <h1>Contact</h1>
+            </Link>
+
+               <Link to={"/achievement"} className=' cursor-pointer  w-full p-2 flex items-center justify-center'>
+              <h1>Achievement</h1>
             </Link>
             <hr />
             <Link
