@@ -3,6 +3,7 @@ import Nav from "../components/resuable/nav";
 import { Star } from "lucide-react";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import Footer from "../pages/Home/footer";
 
 // ─────────────────────────────────────────────
 //  GOOGLE FONTS  →  add to your index.html <head>
@@ -30,7 +31,7 @@ const achievements = [
     headline: "Topped District in Class XII Board Examinations",
     body: "Secured 94.2% aggregate in the Maharashtra State Board examinations, ranking first among 3,400 students across the district. Awarded the Excellence Shield by the Principal for outstanding performance.",
     tag: "2023",
-    image: null,
+
   },
   {
     id: 3,
@@ -38,7 +39,7 @@ const achievements = [
     headline: "National Finalist at Smart India Hackathon",
     body: "Led a six-member team to the national finals of SIH 2024, developing an AI-powered crop disease detection system. Recognised by the Ministry of Agriculture for innovation and real-world impact.",
     tag: "2024",
-    image: null,
+    image:"/image/nasa5.png",
   },
   {
     id: 4,
@@ -88,7 +89,7 @@ const achievements = [
 
 function DividerThick() {
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="w-full h-[3px] bg-zinc-900" />
       <div className="w-full h-[1px] mt-[3px] bg-zinc-900" />
     </div>
@@ -456,7 +457,7 @@ function Achievement() {
   </div>
 
   {/* ── HEADLINE ── */}
-  <div className="px-5 pt-5 pb-3 border-b border-zinc-400 text-center">
+  <div className="px-5 pt-5 pb-3 border-b border-zinc-400 text-left">
     <h2
       className="uppercase leading-[0.9] text-zinc-900 tracking-tight"
       style={{
@@ -517,8 +518,89 @@ function Achievement() {
   </div>
 </div>
 
+  <DividerThick/>
+
+     <div className="w-full border border-zinc-400 overflow-hidden">
+
+  {/* ── TOP LABEL BAR ── */}
+  <div
+    className="flex flex-wrap items-center gap-2 px-4 py-[5px] border-b border-zinc-400"
+    style={{ fontFamily: "'IM Fell English', serif" }}
+  >
+    <span className="bg-zinc-900 text-[#EEE4D6] text-[0.48rem] tracking-[0.26em] uppercase px-2 py-[2px] shrink-0">
+      ★ &nbsp;Third Featured Story
+    </span>
+    <div className="flex-1 h-px bg-zinc-300 hidden md:block" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      Education
+    </span>
+    <Star size={8} fill="#999" className="text-zinc-400 shrink-0" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      2025
+    </span>
+  </div>
+
+  {/* ── HEADLINE ── */}
+  <div className="px-5 pt-5 pb-3 border-b border-zinc-400 text-right">
+    <h2
+      className="uppercase leading-[0.9] text-zinc-900 tracking-tight"
+      style={{
+        fontFamily: "'League Gothic', sans-serif",
+        fontSize: "clamp(2.8rem, 8vw, 6rem)",
+      }}
+    >
+     AIDS department Topper 
+    </h2>
+  </div>
+
+  {/* ── BODY: text LEFT | image RIGHT ── */}
+  <div className="flex md:flex-row-reverse flex-col ">
+
+    {/* TEXT — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 px-6 md:px-10 py-6 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-zinc-400">
+      <p
+        className="text-lg md:text-[1.8rem] italic leading-snug text-zinc-700"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+        AIDS Third and Fourth Semester Topper
+      </p>
+      <div className="h-px bg-zinc-800" />
+      <i>
+      <p
+        className="text-xl md:text-[1.5rem] leading-[1.75] text-zinc-700 text-justify hyphens-auto"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+       I am honored to be felicitated by my department for securing 1st Rank in the 3rd Semester and 5th Rank in the 4th Semester.
+Grateful to my professors and mentors for their constant guidance and support. Looking forward to learning more and achieving greater milestones ahead. 
+
+<br />
+<br />
+Building on this achievement, I have focused on maintaining a balance between academics and practical learning by actively engaging in projects, technical events, and collaborative activities. These experiences have helped me develop a deeper understanding of concepts, improve my problem-solving abilities, and grow both technically and personally. I aim to continue this journey with dedication, curiosity, and a constant drive to excel.
+
+      </p>
+
+      </i>
+    </div>
+
+    {/* IMAGE — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 h-full md:h-[560px]">
+      <img
+        className="w-full h-full object-cover"
+        style={{
+          objectPosition: "20% 30%",
+          
+      
+        }}
+        src="/image/Topper.png"
+        alt="YCAP Top Performer"
+      />
+    </div>
+
+  </div>
+</div>
+
         {/* ── ALTERNATING ROWS ── */}
-        <div className="w-full border border-zinc-400 border-t-0 overflow-hidden">
+        {/* <div className="w-full border mt-10 border-zinc-400 border-t-0 overflow-hidden">
           {rest.map((achievement, index) => (
             <AchievementRow
               key={achievement.id}
@@ -526,7 +608,7 @@ function Achievement() {
               index={index}
             />
           ))}
-        </div>
+        </div> */}
 
         {/* ── FOOTER ── */}
         <div className="mt-8">
@@ -539,6 +621,7 @@ function Achievement() {
           </p>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
