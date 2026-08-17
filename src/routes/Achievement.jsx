@@ -415,21 +415,21 @@ function Achievement() {
               marginBottom: "-0.05em",
             }}
           >
-            My Achievement Page
+            My Achievement News
           </h1>
         </div>
         <DividerThick />
 
         {/* ── META BAR ── */}
         <div
-          className="flex items-center justify-around py-2 border-b-2 border-zinc-700 mb-1"
-          style={{ fontFamily: "'IM Fell English', serif" }}
+          className="flex items-center justify-around py-2 gfs-didot-regular border-b-2 border-zinc-700 mb-1"
+       
         >
-          <span className="text-base tracking-wide">Vol No.190</span>
+          <span className="text-base font-bold tracking-wide">Vol No.190</span>
           <Star size={13} fill="black" />
-          <span className="text-base tracking-wide">Muchkund Thote</span>
+          <span className="text-base  font-bold  tracking-wide">Muchkund Thote</span>
           <Star size={13} fill="black" />
-          <span className="text-base tracking-wide">YCCE</span>
+          <span className="text-base  font-bold tracking-wide">YCCE</span>
         </div>
         <div className="w-full h-[3px] bg-zinc-900 mb-8" />
 

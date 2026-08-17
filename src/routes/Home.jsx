@@ -9,7 +9,7 @@ import gsap from "gsap";
 import Page3 from '../pages/Home/Page3';
 import Page4 from '../pages/Home/Page4';
 import Page5 from '../pages/Home/Page5';
-import Page6 from '../pages/Home/page6';
+import Page6 from '../pages/Home/Page6';
 import Footer from '../pages/Home/footer';
 import Exloader from '../components/resuable/exchnage-loader';
 
