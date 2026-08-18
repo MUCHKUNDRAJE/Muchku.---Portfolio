@@ -81,6 +81,22 @@ const achievements = [
     tag: "2026",
     image: null,
   },
+  {
+    id: 9,
+    category: "MENTORSHIP & TEACHING",
+    headline: "Awarded Certificate for Shadow Teaching Session",
+    body: "Honored with a certificate of recognition for conducting a Shadow Teaching session for 6th-semester students, delivering interactive lectures and mentoring juniors in core concepts and practical implementations.",
+    tag: "2025",
+    image: "/image/certificate.jpeg",
+  },
+  {
+    id: 10,
+    category: "COMMERCIAL SOFTWARE & PROJECT",
+    headline: 'Appreciation Certificate — "Ayurveda Web Devs" (CodeWare Club)',
+    body: 'Honored by the Department of CT, AI&DS, CSE(IoT) for valuable contributions to the software development project "Ayurveda Web Devs" under CodeWare Club (deployed to Data Megh) for creating scalable and self-reliant technological solutions.',
+    tag: "2025",
+    image: "/image/dbms_certificate.jpeg",
+  },
 ];
 
 // ─────────────────────────────────────────────
@@ -593,6 +609,155 @@ Building on this achievement, I have focused on maintaining a balance between ac
         }}
         src="/image/Topper.png"
         alt="YCAP Top Performer"
+      />
+    </div>
+
+  </div>
+</div>
+
+  <DividerThick />
+
+  <div className="w-full border border-zinc-400 overflow-hidden">
+
+  {/* ── TOP LABEL BAR ── */}
+  <div
+    className="flex flex-wrap items-center gap-2 px-4 py-[5px] border-b border-zinc-400"
+    style={{ fontFamily: "'IM Fell English', serif" }}
+  >
+    <span className="bg-zinc-900 text-[#EEE4D6] text-[0.48rem] tracking-[0.26em] uppercase px-2 py-[2px] shrink-0">
+      ★ &nbsp;Fourth Featured Story
+    </span>
+    <div className="flex-1 h-px bg-zinc-300 hidden md:block" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      Mentorship & Education
+    </span>
+    <Star size={8} fill="#999" className="text-zinc-400 shrink-0" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      2025
+    </span>
+  </div>
+
+  {/* ── HEADLINE ── */}
+  <div className="px-5 pt-5 pb-3 border-b border-zinc-400 text-left">
+    <h2
+      className="uppercase leading-[0.9] text-zinc-900 tracking-tight"
+      style={{
+        fontFamily: "'League Gothic', sans-serif",
+        fontSize: "clamp(2.8rem, 8vw, 6rem)",
+      }}
+    >
+      Certificate for Shadow Teaching
+    </h2>
+  </div>
+
+  {/* ── BODY: text LEFT | image RIGHT ── */}
+  <div className="flex flex-col md:flex-row">
+
+    {/* TEXT — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 px-6 md:px-10 py-6 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-zinc-400">
+      <p
+        className="text-lg md:text-[1.8rem] italic leading-snug text-zinc-700"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+        Honored with a Certificate for Conducting Shadow Teaching Session for 6th Semester Students
+      </p>
+      <div className="h-px bg-zinc-800" />
+      <i>
+      <p
+        className="text-xl md:text-[1.5rem] leading-[1.75] text-zinc-700 text-justify hyphens-auto"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+        I was honored with a certificate of recognition for successfully conducting a Shadow Teaching session for 6th-semester students — a recognition celebrating excellence in peer-to-peer education, technical communication, and academic mentoring.
+        <br /><br />
+        During this session, I prepared structured course materials, conducted interactive lectures on advanced topics, and provided hands-on guidance to help junior students strengthen their core engineering concepts and problem-solving skills.
+      </p>
+
+      </i>
+    </div>
+
+    {/* IMAGE — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 h-full md:h-[540px]">
+      <img
+        className="w-full h-full object-cover"
+        style={{
+          objectPosition: "center",
+        }}
+        src="/image/certificate.jpeg"
+        alt="Shadow Teaching Certificate"
+      />
+    </div>
+
+  </div>
+</div>
+
+  <DividerThick />
+
+  <div className="w-full border border-zinc-400 overflow-hidden">
+
+  {/* ── TOP LABEL BAR ── */}
+  <div
+    className="flex flex-wrap items-center gap-2 px-4 py-[5px] border-b border-zinc-400"
+    style={{ fontFamily: "'IM Fell English', serif" }}
+  >
+    <span className="bg-zinc-900 text-[#EEE4D6] text-[0.48rem] tracking-[0.26em] uppercase px-2 py-[2px] shrink-0">
+      ★ &nbsp;Fifth Featured Story
+    </span>
+    <div className="flex-1 h-px bg-zinc-300 hidden md:block" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      Department of CT, AI&DS, CSE(IoT)
+    </span>
+    <Star size={8} fill="#999" className="text-zinc-400 shrink-0" />
+    <span className="text-[0.5rem] tracking-[0.18em] uppercase text-zinc-500 shrink-0">
+      2025
+    </span>
+  </div>
+
+  {/* ── HEADLINE ── */}
+  <div className="px-5 pt-5 pb-3 border-b border-zinc-400 text-right">
+    <h2
+      className="uppercase leading-[0.9] text-zinc-900 tracking-tight"
+      style={{
+        fontFamily: "'League Gothic', sans-serif",
+        fontSize: "clamp(2.8rem, 8vw, 6rem)",
+      }}
+    >
+      CodeWare Club Software Project
+    </h2>
+  </div>
+
+  {/* ── BODY: text RIGHT | image LEFT ── */}
+  <div className="flex md:flex-row-reverse flex-col">
+
+    {/* TEXT — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 px-6 md:px-10 py-6 flex flex-col gap-4 border-b md:border-b-0 md:border-r border-zinc-400">
+      <p
+        className="text-lg md:text-[1.8rem] italic leading-snug text-zinc-700"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+        Appreciation Certificate for Software Development — "Ayurveda Web Devs" DBMS Project
+      </p>
+      <div className="h-px bg-zinc-800" />
+      <i>
+      <p
+        className="text-xl md:text-[1.5rem] leading-[1.75] text-zinc-700 text-justify hyphens-auto"
+        style={{ fontFamily: "'IM Fell English', serif" }}
+      >
+        Awarded an <u>Appreciation Certificate</u> by the Department of CT, AI&DS, CSE(IoT) for valuable contributions to the software development project titled <u>"Ayurveda Web Devs"</u> under the CodeWare Club (deployed to Data Megh).
+        <br /><br />
+        Recognized for dedication, innovation, and commitment toward building scalable and self-reliant technological solutions — reflecting a high spirit of responsibility and technical sustainability contributing meaningfully to technology and society.
+      </p>
+      </i>
+    </div>
+
+    {/* IMAGE — full width on mobile, half on desktop */}
+    <div className="w-full md:w-1/2 h-full md:h-[540px]">
+      <img
+        className="w-full h-full object-cover"
+        style={{
+          objectPosition: "center",
+        }}
+        src="/image/dbms_certificate.jpeg"
+        alt="Ayurveda Web Devs DBMS Project Certificate Data Megh"
       />
     </div>
 
